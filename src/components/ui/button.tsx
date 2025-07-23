@@ -13,14 +13,14 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-md hover:shadow-lg",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground hover:border-gold",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground hover:border-gold transition-all duration-200",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        gold: "bg-gradient-gold text-primary-dark hover:opacity-90 shadow-lg hover:shadow-xl",
-        trading: "bg-gradient-trading text-white hover:opacity-90 shadow-lg hover:shadow-xl",
-        forgiveness: "bg-gradient-forgiveness text-white hover:opacity-90 shadow-lg hover:shadow-xl",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-sm hover:shadow-md",
+        ghost: "hover:bg-accent hover:text-accent-foreground transition-colors duration-200",
+        link: "text-primary underline-offset-4 hover:underline transition-colors duration-200",
+        gold: "bg-gradient-gold text-white hover:opacity-90 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200",
+        trading: "bg-gradient-trading text-white hover:opacity-90 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200",
+        forgiveness: "bg-gradient-forgiveness text-white hover:opacity-90 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200",
       },
       size: {
         default: "h-10 px-4 py-2",

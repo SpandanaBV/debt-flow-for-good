@@ -33,7 +33,7 @@ const ScrollToTop: React.FC = () => {
       className="fixed bottom-8 right-8 z-50 h-12 w-12 p-0 rounded-full bg-gold hover:bg-gold-bright transition-all duration-300 shadow-lg hover:shadow-xl"
       aria-label="Scroll to top"
     >
-      <ChevronUp className="h-5 w-5 text-primary-dark" />
+      <ChevronUp className="h-5 w-5 text-white" />
     </Button>
   );
 };

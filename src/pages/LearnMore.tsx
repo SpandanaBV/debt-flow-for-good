@@ -145,7 +145,7 @@ const LearnMore: React.FC = () => {
             Ready to Transform Healthcare Finance?
           </h2>
           <Link to="/start-impact">
-            <Button size="lg" className="bg-gradient-gold text-primary-dark hover:opacity-90 font-semibold px-12">
+            <Button size="lg" className="bg-gradient-gold text-white hover:opacity-90 font-semibold px-12">
               Start Your Impact
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

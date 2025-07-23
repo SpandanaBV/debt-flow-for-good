@@ -40,7 +40,7 @@ const Home: React.FC = () => {
               </Link>
               
               <Link to="/start-impact">
-                <Button size="lg" className="bg-gradient-trading text-white hover:opacity-90 font-semibold px-8">
+                <Button size="lg" className="bg-gradient-gold text-white hover:opacity-90 font-semibold px-8">
                   Start Your Impact
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

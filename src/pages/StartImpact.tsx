@@ -200,7 +200,7 @@ const StartImpact: React.FC = () => {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-gradient-gold text-primary-dark hover:opacity-90 font-semibold py-6 text-lg"
+                  className="w-full bg-gradient-gold text-white hover:opacity-90 font-semibold py-6 text-lg"
                 >
                   Join the Waitlist
                 </Button>
