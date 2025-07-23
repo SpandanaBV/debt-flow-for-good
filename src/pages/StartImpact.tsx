@@ -11,6 +11,7 @@ import { Users, Calendar, Shield, CheckCircle } from 'lucide-react';
 
 const StartImpact: React.FC = () => {
   const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,6 +24,7 @@ const StartImpact: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
     
     if (!formData.terms) {
       toast({
@@ -30,13 +32,14 @@ const StartImpact: React.FC = () => {
         description: "Please accept the terms and conditions to continue.",
         variant: "destructive"
       });
+      setIsLoading(false);
       return;
     }
 
     try {
       // Here you would integrate with Google Sheets API
       // For now, we'll simulate the submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise(resolve => setTimeout(resolve, 2000));
       
       toast({
         title: "Welcome to DebtBow!",
@@ -59,6 +62,8 @@ const StartImpact: React.FC = () => {
         description: "Something went wrong. Please try again.",
         variant: "destructive"
       });
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -79,15 +84,15 @@ const StartImpact: React.FC = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-hero">
+      <section className="py-20 bg-gradient-hero animate-fade-in">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-gold bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-gold bg-clip-text text-transparent animate-slide-in-up">
             Be the First to Trade Impact
           </h1>
-          <p className="text-xl md:text-2xl text-gold-bright mb-4 font-medium">
+          <p className="text-xl md:text-2xl text-gold-bright mb-4 font-medium animate-fade-in animation-delay-200">
             Join the Movement. Own the Change.
           </p>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto animate-fade-in animation-delay-400">
             DebtBow is launching soon. Join the waitlist to get early access and redefine what your money can do.
           </p>
         </div>
@@ -97,9 +102,9 @@ const StartImpact: React.FC = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto">
-            <Card className="p-8 bg-card border-border">
+            <Card className="p-8 bg-card border-border animate-scale-in hover:shadow-2xl transition-all duration-300">
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
+                <div className="space-y-2 animate-fade-in">
                   <Label htmlFor="name">Full Name *</Label>
                   <Input
                     id="name"
@@ -107,11 +112,12 @@ const StartImpact: React.FC = () => {
                     value={formData.name}
                     onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
                     required
-                    className="bg-background"
+                    className="bg-background transition-all duration-200 focus:scale-105"
+                    disabled={isLoading}
                   />
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-2 animate-fade-in animation-delay-100">
                   <Label htmlFor="email">Email Address *</Label>
                   <Input
                     id="email"
@@ -119,7 +125,8 @@ const StartImpact: React.FC = () => {
                     value={formData.email}
                     onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                     required
-                    className="bg-background"
+                    className="bg-background transition-all duration-200 focus:scale-105"
+                    disabled={isLoading}
                   />
                 </div>
 
@@ -200,9 +207,17 @@ const StartImpact: React.FC = () => {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-gradient-gold text-white hover:opacity-90 font-semibold py-6 text-lg"
+                  disabled={isLoading}
+                  className="w-full bg-gradient-gold text-white hover:opacity-90 font-semibold py-6 text-lg transition-all duration-200 hover:scale-105 disabled:opacity-50 disabled:scale-100"
                 >
-                  Join the Waitlist
+                  {isLoading ? (
+                    <div className="flex items-center gap-2">
+                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      Joining Waitlist...
+                    </div>
+                  ) : (
+                    'Join the Waitlist'
+                  )}
                 </Button>
               </form>
             </Card>
@@ -215,24 +230,24 @@ const StartImpact: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="flex flex-col items-center">
-                <Calendar className="h-12 w-12 text-gold mb-4" />
+              <div className="flex flex-col items-center animate-fade-in animation-delay-600 group">
+                <Calendar className="h-12 w-12 text-gold mb-4 group-hover:animate-bounce-gentle transition-all duration-300" />
                 <h3 className="text-xl font-semibold mb-2">Launching Fall 2025</h3>
                 <p className="text-muted-foreground">
                   Be among the first to access our revolutionary platform
                 </p>
               </div>
               
-              <div className="flex flex-col items-center">
-                <Users className="h-12 w-12 text-trading mb-4" />
+              <div className="flex flex-col items-center animate-fade-in animation-delay-800 group">
+                <Users className="h-12 w-12 text-trading mb-4 group-hover:animate-bounce-gentle transition-all duration-300" />
                 <h3 className="text-xl font-semibold mb-2">500+ Users Signed Up</h3>
                 <p className="text-muted-foreground">
                   Join a growing community of impact-driven individuals
                 </p>
               </div>
               
-              <div className="flex flex-col items-center">
-                <Shield className="h-12 w-12 text-forgiveness mb-4" />
+              <div className="flex flex-col items-center animate-fade-in animation-delay-1000 group">
+                <Shield className="h-12 w-12 text-forgiveness mb-4 group-hover:animate-bounce-gentle transition-all duration-300" />
                 <h3 className="text-xl font-semibold mb-2">Your Data is Safe</h3>
                 <p className="text-muted-foreground">
                   No spam, ever. We respect your privacy completely

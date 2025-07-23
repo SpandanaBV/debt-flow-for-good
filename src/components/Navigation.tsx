@@ -10,7 +10,7 @@ const Navigation: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-border shadow-sm">
+    <nav className="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-border shadow-sm animate-slide-in-up">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
@@ -20,7 +20,7 @@ const Navigation: React.FC = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               to="/" 
-              className={`text-sm font-medium transition-colors hover:text-gold ${
+              className={`text-sm font-medium transition-all duration-200 hover:text-gold hover:scale-105 story-link ${
                 isActive('/') ? 'text-gold' : 'text-muted-foreground'
               }`}
             >
@@ -28,7 +28,7 @@ const Navigation: React.FC = () => {
             </Link>
             <Link 
               to="/learn-more" 
-              className={`text-sm font-medium transition-colors hover:text-gold ${
+              className={`text-sm font-medium transition-all duration-200 hover:text-gold hover:scale-105 story-link ${
                 isActive('/learn-more') ? 'text-gold' : 'text-muted-foreground'
               }`}
             >
@@ -36,7 +36,7 @@ const Navigation: React.FC = () => {
             </Link>
             <Link 
               to="/about" 
-              className={`text-sm font-medium transition-colors hover:text-gold ${
+              className={`text-sm font-medium transition-all duration-200 hover:text-gold hover:scale-105 story-link ${
                 isActive('/about') ? 'text-gold' : 'text-muted-foreground'
               }`}
             >
@@ -47,7 +47,7 @@ const Navigation: React.FC = () => {
           <div className="flex items-center space-x-4">
             <ThemeToggle />
             <Link to="/start-impact">
-              <Button variant="default" className="bg-gradient-gold text-white hover:opacity-90 font-semibold">
+              <Button variant="default" className="bg-gradient-gold text-white hover:opacity-90 font-semibold hover:scale-105 transition-all duration-200">
                 Start Your Impact
               </Button>
             </Link>
