@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					dark: 'hsl(var(--primary-dark))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,16 +53,28 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				// DebtBow custom colors
+				gold: {
+					DEFAULT: 'hsl(var(--gold))',
+					bright: 'hsl(var(--gold-bright))'
+				},
+				heartbeat: 'hsl(var(--heartbeat-red))',
+				growth: 'hsl(var(--growth-green))',
+				trading: {
+					DEFAULT: 'hsl(var(--trading-blue))',
+					light: 'hsl(var(--trading-blue-light))'
+				},
+				forgiveness: {
+					DEFAULT: 'hsl(var(--forgiveness-purple))',
+					light: 'hsl(var(--forgiveness-purple-light))'
+				},
+				highlight: 'hsl(var(--highlight))'
+			},
+			backgroundImage: {
+				'gradient-trading': 'var(--gradient-trading)',
+				'gradient-forgiveness': 'var(--gradient-forgiveness)',
+				'gradient-gold': 'var(--gradient-gold)',
+				'gradient-hero': 'var(--gradient-hero)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
