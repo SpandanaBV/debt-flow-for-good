@@ -7,41 +7,49 @@ import { ArrowRight, Heart, TrendingUp, Users } from 'lucide-react';
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/5 to-background/20" />
+      {/* Hero Section - Cream Background */}
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 to-orange-50 dark:from-background dark:to-card overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-50/50 to-orange-100/30 dark:via-background/5 dark:to-background/20" />
+        
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-gold/10 rounded-full blur-xl animate-float animation-delay-200" />
+          <div className="absolute top-1/4 right-20 w-24 h-24 bg-trading/10 rounded-full blur-lg animate-bounce-gentle animation-delay-400" />
+          <div className="absolute bottom-1/4 left-1/3 w-20 h-20 bg-forgiveness/10 rounded-full blur-lg animate-pulse-slow animation-delay-600" />
+          <div className="absolute bottom-10 right-10 w-28 h-28 bg-gold/5 rounded-full blur-xl animate-float animation-delay-800" />
+        </div>
         
         <div className="container mx-auto px-6 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-gold bg-clip-text text-transparent animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-gold bg-clip-text text-transparent animate-fade-in transform hover:scale-105 transition-transform duration-300">
               DebtBow
             </h1>
             
-            <p className="text-xl md:text-2xl text-gold-bright mb-8 font-medium animate-fade-in animation-delay-200">
+            <p className="text-xl md:text-2xl text-white dark:text-gold-bright mb-8 font-medium animate-fade-in animation-delay-200 transform translate-y-4 opacity-0 [animation-fill-mode:forwards]">
               Making medical forgiveness your financial superpower.
             </p>
             
-            <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-400">
+            <p className="text-lg md:text-xl text-white/90 dark:text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-400 transform translate-y-4 opacity-0 [animation-fill-mode:forwards]">
               Turn medical debt into a liquid, tradable, and forgivable asset class — where profit meets purpose.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-in-up animation-delay-600">
               <Link to="/learn-more">
-                <Button size="lg" className="bg-gradient-gold text-primary-dark hover:opacity-90 font-semibold px-8 hover:scale-105 transition-all duration-200">
+                <Button size="lg" className="bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30 hover:scale-105 transition-all duration-300 font-semibold px-8 shadow-lg">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               
               <Link to="/about">
-                <Button variant="outline" size="lg" className="border-gold text-gold hover:bg-gold hover:text-primary-dark px-8 hover:scale-105 transition-all duration-200">
+                <Button variant="outline" size="lg" className="border-white/50 text-white hover:bg-white/20 hover:scale-105 transition-all duration-300 px-8 backdrop-blur-sm">
                   About Us
                 </Button>
               </Link>
               
               <Link to="/start-impact">
-                <Button size="lg" className="bg-gradient-gold text-white hover:opacity-90 font-semibold px-8 hover:scale-105 transition-all duration-200">
-                  Start Your Impact
+                <Button size="lg" className="bg-gradient-gold text-primary-dark hover:opacity-90 font-semibold px-8 hover:scale-105 transition-all duration-300 shadow-lg animate-pulse-slow">
+                  Get Started
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
@@ -49,54 +57,80 @@ const Home: React.FC = () => {
           </div>
         </div>
         
-        {/* Floating Elements */}
-        <div className="absolute top-1/4 left-1/4 opacity-20">
-          <div className="w-2 h-2 bg-gold rounded-full animate-pulse-slow" />
+        {/* Enhanced Floating Elements */}
+        <div className="absolute top-1/4 left-1/4 opacity-30 animate-float animation-delay-300">
+          <div className="w-3 h-3 bg-gold rounded-full shadow-lg" />
         </div>
-        <div className="absolute top-1/3 right-1/3 opacity-30">
-          <div className="w-1 h-1 bg-trading-light rounded-full animate-float" />
+        <div className="absolute top-1/3 right-1/3 opacity-40 animate-bounce-gentle animation-delay-500">
+          <div className="w-2 h-2 bg-trading-light rounded-full shadow-md" />
         </div>
-        <div className="absolute bottom-1/3 left-1/3 opacity-25">
-          <div className="w-1.5 h-1.5 bg-forgiveness-light rounded-full animate-bounce-gentle" />
+        <div className="absolute bottom-1/3 left-1/3 opacity-35 animate-pulse-slow animation-delay-700">
+          <div className="w-2.5 h-2.5 bg-forgiveness-light rounded-full shadow-lg" />
+        </div>
+        <div className="absolute top-1/2 left-1/6 opacity-25 animate-float animation-delay-900">
+          <div className="w-1.5 h-1.5 bg-gold-bright rounded-full" />
+        </div>
+        <div className="absolute bottom-1/4 right-1/4 opacity-30 animate-bounce-gentle animation-delay-1000">
+          <div className="w-4 h-4 bg-trading rounded-full blur-sm" />
         </div>
       </section>
 
-      {/* Features Preview */}
-      <section className="py-20 bg-background">
+      {/* Features Preview - Blue Background */}
+      <section className="py-20 bg-gradient-to-br from-slate-800 to-slate-900 dark:from-background dark:to-card">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white dark:text-foreground animate-slide-in-up">
               Transform Healthcare Finance
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-white/80 dark:text-muted-foreground max-w-2xl mx-auto animate-fade-in animation-delay-200">
               DebtBow creates the first liquid, impact-first market for medical debt
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="p-8 text-center bg-gradient-forgiveness border-0 hover:scale-105 transition-all duration-300 animate-fade-in animation-delay-200 group">
-              <Heart className="h-12 w-12 text-white mx-auto mb-4 group-hover:animate-bounce-gentle" />
-              <h3 className="text-xl font-semibold text-white mb-3">Forgive Debt</h3>
-              <p className="text-white/90">
+            <Card className="p-8 text-center bg-gradient-forgiveness border-0 hover:scale-105 hover:rotate-1 transition-all duration-500 animate-fade-in animation-delay-200 group shadow-2xl">
+              <Heart className="h-12 w-12 text-white mx-auto mb-4 group-hover:animate-bounce-gentle transform group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-gold transition-colors duration-300">Forgive Debt</h3>
+              <p className="text-white/90 group-hover:text-white transition-colors duration-300">
                 Wipe out debt, lift lives, and earn meaningful tax relief
               </p>
             </Card>
             
-            <Card className="p-8 text-center bg-gradient-trading border-0 hover:scale-105 transition-all duration-300 animate-fade-in animation-delay-400 group">
-              <TrendingUp className="h-12 w-12 text-white mx-auto mb-4 group-hover:animate-bounce-gentle" />
-              <h3 className="text-xl font-semibold text-white mb-3">Trade Impact</h3>
-              <p className="text-white/90">
+            <Card className="p-8 text-center bg-gradient-trading border-0 hover:scale-105 hover:-rotate-1 transition-all duration-500 animate-fade-in animation-delay-400 group shadow-2xl">
+              <TrendingUp className="h-12 w-12 text-white mx-auto mb-4 group-hover:animate-bounce-gentle transform group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-gold transition-colors duration-300">Trade Impact</h3>
+              <p className="text-white/90 group-hover:text-white transition-colors duration-300">
                 Align your portfolio with purpose and ESG upside
               </p>
             </Card>
             
-            <Card className="p-8 text-center bg-gradient-gold border-0 hover:scale-105 transition-all duration-300 animate-fade-in animation-delay-600 group">
-              <Users className="h-12 w-12 text-primary-dark mx-auto mb-4 group-hover:animate-bounce-gentle" />
-              <h3 className="text-xl font-semibold text-primary-dark mb-3">Resell Assets</h3>
-              <p className="text-primary-dark/90">
+            <Card className="p-8 text-center bg-gradient-gold border-0 hover:scale-105 hover:rotate-1 transition-all duration-500 animate-fade-in animation-delay-600 group shadow-2xl">
+              <Users className="h-12 w-12 text-primary-dark mx-auto mb-4 group-hover:animate-bounce-gentle transform group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-xl font-semibold text-primary-dark mb-3 group-hover:text-white transition-colors duration-300">Resell Assets</h3>
+              <p className="text-primary-dark/90 group-hover:text-white/90 transition-colors duration-300">
                 Flip for profit while staying mission-driven
               </p>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section - Cream Background */}
+      <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-card dark:to-background">
+        <div className="container mx-auto px-6 text-center">
+          <div className="max-w-3xl mx-auto animate-fade-in">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-slate-800 dark:text-foreground animate-slide-in-up">
+              Ready to Make an Impact?
+            </h2>
+            <p className="text-xl text-slate-600 dark:text-muted-foreground mb-8 animate-fade-in animation-delay-200">
+              Join the financial revolution that puts purpose at the center of profit
+            </p>
+            <Link to="/start-impact">
+              <Button size="lg" className="bg-gradient-gold text-primary-dark hover:opacity-90 font-semibold px-12 py-4 text-lg hover:scale-105 transition-all duration-300 shadow-xl animate-pulse-slow">
+                Get Started Now
+                <ArrowRight className="ml-3 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
