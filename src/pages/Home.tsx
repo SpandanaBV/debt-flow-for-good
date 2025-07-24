@@ -48,7 +48,7 @@ const Home: React.FC = () => {
               </Link>
               
               <Link to="/start-impact">
-                <Button size="lg" className="bg-gradient-gold text-primary-dark hover:opacity-90 font-semibold px-8 hover:scale-105 transition-all duration-300 shadow-lg animate-pulse-slow">
+                <Button size="lg" className="bg-gradient-gold text-primary-dark hover:opacity-90 font-semibold px-8 hover:scale-105 transition-all duration-300 shadow-lg">
                   Get Started
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -126,7 +126,7 @@ const Home: React.FC = () => {
               Join the financial revolution that puts purpose at the center of profit
             </p>
             <Link to="/start-impact">
-              <Button size="lg" className="bg-gradient-gold text-primary-dark hover:opacity-90 font-semibold px-12 py-4 text-lg hover:scale-105 transition-all duration-300 shadow-xl animate-pulse-slow">
+              <Button size="lg" className="bg-gradient-gold text-primary-dark hover:opacity-90 font-semibold px-12 py-4 text-lg hover:scale-105 transition-all duration-300 shadow-xl">
                 Get Started Now
                 <ArrowRight className="ml-3 h-5 w-5" />
               </Button>
