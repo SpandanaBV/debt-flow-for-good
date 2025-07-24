@@ -115,6 +115,93 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* How It Works Section - Cream Background */}
+      <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-background dark:to-card">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800 dark:text-foreground">
+              How DebtBow Works
+            </h2>
+            <p className="text-xl text-slate-600 dark:text-muted-foreground max-w-2xl mx-auto">
+              Simple steps to transform medical debt into financial opportunity
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center animate-fade-in animation-delay-200">
+              <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span className="text-2xl font-bold text-primary-dark">1</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-3 text-slate-800 dark:text-foreground">Acquire Debt</h3>
+              <p className="text-slate-600 dark:text-muted-foreground text-sm">
+                Purchase medical debt via our secure platform
+              </p>
+            </div>
+            
+            <div className="text-center animate-fade-in animation-delay-400">
+              <div className="w-16 h-16 bg-gradient-trading rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span className="text-2xl font-bold text-white">2</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-3 text-slate-800 dark:text-foreground">Choose Action</h3>
+              <p className="text-slate-600 dark:text-muted-foreground text-sm">
+                Decide to forgive, trade, or resell
+              </p>
+            </div>
+            
+            <div className="text-center animate-fade-in animation-delay-600">
+              <div className="w-16 h-16 bg-gradient-forgiveness rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span className="text-2xl font-bold text-white">3</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-3 text-slate-800 dark:text-foreground">Execute</h3>
+              <p className="text-slate-600 dark:text-muted-foreground text-sm">
+                Complete transactions with full transparency
+              </p>
+            </div>
+            
+            <div className="text-center animate-fade-in animation-delay-800">
+              <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span className="text-2xl font-bold text-primary-dark">4</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-3 text-slate-800 dark:text-foreground">Track Impact</h3>
+              <p className="text-slate-600 dark:text-muted-foreground text-sm">
+                Monitor returns and social impact
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section - Blue Background */}
+      <section className="py-20 bg-gradient-to-br from-slate-800 to-slate-900 dark:from-card dark:to-background">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white dark:text-foreground">
+              Making Real Impact
+            </h2>
+            <p className="text-xl text-white/80 dark:text-muted-foreground max-w-2xl mx-auto">
+              Join a growing movement that's changing healthcare finance
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="text-center bg-white/10 dark:bg-card/20 backdrop-blur-sm rounded-xl p-8 animate-fade-in animation-delay-200">
+              <div className="text-4xl md:text-5xl font-bold text-gold mb-2">$1.2M+</div>
+              <p className="text-white/90 dark:text-muted-foreground">Medical debt ready for impact</p>
+            </div>
+            
+            <div className="text-center bg-white/10 dark:bg-card/20 backdrop-blur-sm rounded-xl p-8 animate-fade-in animation-delay-400">
+              <div className="text-4xl md:text-5xl font-bold text-trading-light mb-2">500+</div>
+              <p className="text-white/90 dark:text-muted-foreground">Early supporters joined</p>
+            </div>
+            
+            <div className="text-center bg-white/10 dark:bg-card/20 backdrop-blur-sm rounded-xl p-8 animate-fade-in animation-delay-600">
+              <div className="text-4xl md:text-5xl font-bold text-forgiveness-light mb-2">85%</div>
+              <p className="text-white/90 dark:text-muted-foreground">Average debt reduction achieved</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Section - Cream Background */}
       <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-card dark:to-background">
         <div className="container mx-auto px-6 text-center">
