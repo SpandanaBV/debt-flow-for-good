@@ -68,13 +68,25 @@ export default {
 					DEFAULT: 'hsl(var(--forgiveness-purple))',
 					light: 'hsl(var(--forgiveness-purple-light))'
 				},
-				highlight: 'hsl(var(--highlight))'
+				highlight: 'hsl(var(--highlight))',
+				// Enhanced light mode colors
+				cream: {
+					light: 'hsl(var(--cream-light))',
+					DEFAULT: 'hsl(var(--cream))',
+					dark: 'hsl(var(--cream-dark))'
+				},
+				blue: {
+					elegant: 'hsl(var(--blue-elegant))',
+					dark: 'hsl(var(--blue-dark))'
+				}
 			},
 			backgroundImage: {
 				'gradient-trading': 'var(--gradient-trading)',
 				'gradient-forgiveness': 'var(--gradient-forgiveness)',
 				'gradient-gold': 'var(--gradient-gold)',
-				'gradient-hero': 'var(--gradient-hero)'
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-cream': 'var(--gradient-cream)',
+				'gradient-blue-elegant': 'var(--gradient-blue-elegant)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

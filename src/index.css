@@ -9,54 +9,63 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Enhanced Light theme */
-    --background: 0 0% 98%;
-    --foreground: 220 25% 8%;
+    /* Enhanced Light theme - More attractive design */
+    --background: 42 12% 97%;
+    --foreground: 220 30% 12%;
     
     --card: 0 0% 100%;
-    --card-foreground: 220 25% 8%;
+    --card-foreground: 220 30% 12%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 8%;
+    --popover-foreground: 220 30% 12%;
     
-    --primary: 220 25% 8%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 220 30% 15%;
+    --primary-foreground: 42 12% 97%;
     
-    --secondary: 40 15% 92%;
-    --secondary-foreground: 220 25% 8%;
+    --secondary: 42 20% 95%;
+    --secondary-foreground: 220 30% 12%;
     
-    --muted: 40 10% 95%;
-    --muted-foreground: 220 15% 35%;
+    --muted: 42 15% 94%;
+    --muted-foreground: 220 20% 40%;
     
-    --accent: 40 45% 55%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 40 55% 60%;
+    --accent-foreground: 220 30% 12%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     
-    --border: 40 20% 88%;
-    --input: 40 15% 94%;
-    --ring: 40 45% 55%;
+    --border: 42 20% 90%;
+    --input: 42 15% 96%;
+    --ring: 40 55% 60%;
     
     --radius: 0.75rem;
     
-    /* Enhanced DebtBow custom tokens for light mode */
-    --primary-dark: 220 25% 8%;
-    --gold: 40 65% 45%;
-    --gold-bright: 45 85% 50%;
+    /* Enhanced DebtBow custom tokens for light mode - more vibrant */
+    --primary-dark: 220 30% 15%;
+    --gold: 42 75% 55%;
+    --gold-bright: 45 90% 60%;
     --heartbeat-red: 0 85% 55%;
-    --growth-green: 120 70% 35%;
-    --trading-blue: 220 85% 45%;
-    --trading-blue-light: 200 85% 55%;
-    --forgiveness-purple: 270 75% 45%;
-    --forgiveness-purple-light: 285 75% 55%;
-    --highlight: 40 85% 60%;
+    --growth-green: 120 65% 40%;
+    --trading-blue: 215 85% 50%;
+    --trading-blue-light: 200 85% 60%;
+    --forgiveness-purple: 270 70% 50%;
+    --forgiveness-purple-light: 285 70% 60%;
+    --highlight: 42 85% 65%;
     
-    /* Enhanced gradients for light mode */
-    --gradient-trading: linear-gradient(135deg, hsl(220, 85%, 45%), hsl(200, 85%, 55%));
-    --gradient-forgiveness: linear-gradient(135deg, hsl(270, 75%, 45%), hsl(285, 75%, 55%));
-    --gradient-gold: linear-gradient(135deg, hsl(40, 65%, 45%), hsl(45, 85%, 50%));
-    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 98%), hsl(40, 20%, 95%));
+    /* Cream color palette */
+    --cream-light: 42 30% 96%;
+    --cream: 42 25% 92%;
+    --cream-dark: 42 20% 88%;
+    --blue-elegant: 215 85% 50%;
+    --blue-dark: 220 90% 35%;
+    
+    /* Enhanced gradients for light mode - more attractive */
+    --gradient-trading: linear-gradient(135deg, hsl(215, 85%, 50%), hsl(200, 85%, 60%));
+    --gradient-forgiveness: linear-gradient(135deg, hsl(270, 70%, 50%), hsl(285, 70%, 60%));
+    --gradient-gold: linear-gradient(135deg, hsl(42, 75%, 55%), hsl(45, 90%, 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(42, 12%, 97%), hsl(42, 20%, 95%));
+    --gradient-cream: linear-gradient(135deg, hsl(42, 30%, 96%), hsl(42, 25%, 92%));
+    --gradient-blue-elegant: linear-gradient(135deg, hsl(215, 85%, 50%), hsl(220, 90%, 35%));
   }
 
   .dark {
