@@ -69,6 +69,19 @@ export default {
 					light: 'hsl(var(--forgiveness-purple-light))'
 				},
 				highlight: 'hsl(var(--highlight))',
+				// Professional Design System Colors
+				'bg-base': 'hsl(var(--bg-base))',
+				'text-base': 'hsl(var(--text-base))',
+				'bg-header': 'hsl(var(--bg-header))',
+				'text-heading': 'hsl(var(--text-heading))',
+				'accent-primary': 'hsl(var(--accent-primary))',
+				'accent-hover': 'hsl(var(--accent-hover))',
+				'accent-gold': 'hsl(var(--accent-gold))',
+				'highlight': 'hsl(var(--highlight))',
+				'rose-coral': 'hsl(var(--rose-coral))',
+				'graphite': 'hsl(var(--graphite))',
+				'bg-card': 'hsl(var(--bg-card))',
+				'border-soft': 'hsl(var(--border-soft))',
 				// Enhanced light mode colors
 				cream: {
 					light: 'hsl(var(--cream-light))',
