@@ -25,24 +25,24 @@ const Home: React.FC = () => {
               DebtBow
             </h1>
             
-            <p className="text-xl md:text-2xl text-white dark:text-gold-bright mb-8 font-medium animate-fade-in animation-delay-200 transform translate-y-4 opacity-0 [animation-fill-mode:forwards]">
+            <p className="text-xl md:text-2xl text-foreground dark:text-gold-bright mb-8 font-medium animate-fade-in animation-delay-200 transform translate-y-4 opacity-0 [animation-fill-mode:forwards]">
               Making medical forgiveness your financial superpower.
             </p>
             
-            <p className="text-lg md:text-xl text-white/90 dark:text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-400 transform translate-y-4 opacity-0 [animation-fill-mode:forwards]">
+            <p className="text-lg md:text-xl text-foreground/90 dark:text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-400 transform translate-y-4 opacity-0 [animation-fill-mode:forwards]">
               Turn medical debt into a liquid, tradable, and forgivable asset class — where profit meets purpose.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-in-up animation-delay-600">
               <Link to="/learn-more">
-                <Button size="lg" className="bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30 hover:scale-105 transition-all duration-300 font-semibold px-8 shadow-lg">
+                <Button size="lg" className="bg-foreground/20 backdrop-blur-sm text-foreground border border-foreground/30 hover:bg-foreground/30 hover:scale-105 transition-all duration-300 font-semibold px-8 shadow-lg dark:bg-white/20 dark:text-white dark:border-white/30 dark:hover:bg-white/30">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               
               <Link to="/about">
-                <Button variant="outline" size="lg" className="border-white/50 text-white hover:bg-white/20 hover:scale-105 transition-all duration-300 px-8 backdrop-blur-sm">
+                <Button variant="outline" size="lg" className="border-foreground/50 text-foreground hover:bg-foreground/20 hover:scale-105 transition-all duration-300 px-8 backdrop-blur-sm dark:border-white/50 dark:text-white dark:hover:bg-white/20">
                   About Us
                 </Button>
               </Link>
