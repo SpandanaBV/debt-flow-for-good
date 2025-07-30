@@ -247,7 +247,7 @@ const StartImpact: React.FC = () => {
               </div>
               
               <div className="flex flex-col items-center animate-fade-in animation-delay-1000 group">
-                <Shield className="h-12 w-12 text-forgiveness mb-4 group-hover:animate-bounce-gentle transition-all duration-300" />
+                <Shield className="h-12 w-12 text-trading mb-4 group-hover:animate-bounce-gentle transition-all duration-300" />
                 <h3 className="text-xl font-semibold mb-2">Your Data is Safe</h3>
                 <p className="text-muted-foreground">
                   No spam, ever. We respect your privacy completely

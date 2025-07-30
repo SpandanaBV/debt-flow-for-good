@@ -29,8 +29,8 @@ const LightModeShowcase: React.FC = () => {
             </p>
           </Card>
           
-          <Card className="p-6 bg-gradient-forgiveness border-0 shadow-lg hover:shadow-xl transition-all duration-300">
-            <h3 className="text-xl font-semibold text-white mb-3">Forgiveness Purple</h3>
+          <Card className="p-6 bg-gradient-gold border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="text-xl font-semibold text-white mb-3">Enhanced Gold</h3>
             <p className="text-white/90">
               Perfect readability and visual appeal across themes
             </p>

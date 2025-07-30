@@ -64,10 +64,6 @@ export default {
 					DEFAULT: 'hsl(var(--trading-blue))',
 					light: 'hsl(var(--trading-blue-light))'
 				},
-				forgiveness: {
-					DEFAULT: 'hsl(var(--forgiveness-purple))',
-					light: 'hsl(var(--forgiveness-purple-light))'
-				},
 				highlight: 'hsl(var(--highlight))',
 				// Professional Design System Colors
 				'bg-base': 'hsl(var(--bg-base))',
@@ -95,7 +91,7 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-trading': 'var(--gradient-trading)',
-				'gradient-forgiveness': 'var(--gradient-forgiveness)',
+				
 				'gradient-gold': 'var(--gradient-gold)',
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-cream': 'var(--gradient-cream)',

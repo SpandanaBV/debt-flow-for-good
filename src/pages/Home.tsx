@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-10 left-10 w-32 h-32 bg-gold/10 rounded-full blur-xl animate-float animation-delay-200" />
           <div className="absolute top-1/4 right-20 w-24 h-24 bg-trading/10 rounded-full blur-lg animate-bounce-gentle animation-delay-400" />
-          <div className="absolute bottom-1/4 left-1/3 w-20 h-20 bg-forgiveness/10 rounded-full blur-lg animate-pulse-slow animation-delay-600" />
+          <div className="absolute bottom-1/4 left-1/3 w-20 h-20 bg-trading/10 rounded-full blur-lg animate-pulse-slow animation-delay-600" />
           <div className="absolute bottom-10 right-10 w-28 h-28 bg-gold/5 rounded-full blur-xl animate-float animation-delay-800" />
         </div>
         
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
           <div className="w-2 h-2 bg-trading-light rounded-full shadow-md" />
         </div>
         <div className="absolute bottom-1/3 left-1/3 opacity-35 animate-pulse-slow animation-delay-700">
-          <div className="w-2.5 h-2.5 bg-forgiveness-light rounded-full shadow-lg" />
+          <div className="w-2.5 h-2.5 bg-trading-light rounded-full shadow-lg" />
         </div>
         <div className="absolute top-1/2 left-1/6 opacity-25 animate-float animation-delay-900">
           <div className="w-1.5 h-1.5 bg-gold-bright rounded-full" />
@@ -88,7 +88,7 @@ const Home: React.FC = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="p-8 text-center bg-gradient-forgiveness border-0 hover:scale-105 hover:rotate-1 transition-all duration-500 animate-fade-in animation-delay-200 group shadow-2xl">
+            <Card className="p-8 text-center bg-gradient-gold border-0 hover:scale-105 hover:rotate-1 transition-all duration-500 animate-fade-in animation-delay-200 group shadow-2xl">
               <Heart className="h-12 w-12 text-white mx-auto mb-4 group-hover:animate-bounce-gentle transform group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-gold transition-colors duration-300">Forgive Debt</h3>
               <p className="text-white/90 group-hover:text-white transition-colors duration-300">
@@ -149,7 +149,7 @@ const Home: React.FC = () => {
             </div>
             
             <div className="text-center animate-fade-in animation-delay-600">
-              <div className="w-16 h-16 bg-gradient-forgiveness rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <div className="w-16 h-16 bg-gradient-trading rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <span className="text-2xl font-bold text-white">3</span>
               </div>
               <h3 className="text-lg font-semibold mb-3 text-slate-800 dark:text-foreground">Execute</h3>
@@ -195,7 +195,7 @@ const Home: React.FC = () => {
             </div>
             
             <div className="text-center bg-white/10 dark:bg-card/20 backdrop-blur-sm rounded-xl p-8 animate-fade-in animation-delay-600">
-              <div className="text-4xl md:text-5xl font-bold text-forgiveness-light mb-2">85%</div>
+              <div className="text-4xl md:text-5xl font-bold text-gold-bright mb-2">85%</div>
               <p className="text-white/90 dark:text-muted-foreground">Average debt reduction achieved</p>
             </div>
           </div>

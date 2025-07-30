@@ -54,7 +54,7 @@ const About: React.FC = () => {
                       <BookOpen className="w-3 h-3 mr-1" />
                       Brown University
                     </Badge>
-                    <Badge variant="outline" className="border-forgiveness text-forgiveness bg-forgiveness/10">
+                    <Badge variant="outline" className="border-trading text-trading bg-trading/10">
                       <Award className="w-3 h-3 mr-1" />
                       Biomedical Design
                     </Badge>
@@ -99,7 +99,7 @@ const About: React.FC = () => {
                       <BookOpen className="w-3 h-3 mr-1" />
                       Babson College
                     </Badge>
-                    <Badge variant="outline" className="border-forgiveness text-forgiveness bg-forgiveness/10">
+                    <Badge variant="outline" className="border-gold text-gold bg-gold/10">
                       <Award className="w-3 h-3 mr-1" />
                       MS Finance
                     </Badge>
@@ -146,7 +146,7 @@ const About: React.FC = () => {
           
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center bg-white/50 dark:bg-card/50 backdrop-blur-sm rounded-xl p-6 hover:scale-105 transition-all duration-300 animate-fade-in animation-delay-200">
-              <div className="w-16 h-16 bg-gradient-forgiveness rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg animate-pulse-slow">
+              <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg animate-pulse-slow">
                 <Heart className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-slate-800 dark:text-foreground">Impact First</h3>

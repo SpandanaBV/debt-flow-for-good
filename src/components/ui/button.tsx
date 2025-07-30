@@ -20,7 +20,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline transition-colors duration-200",
         gold: "bg-gradient-gold text-white hover:opacity-90 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200",
         trading: "bg-gradient-trading text-white hover:opacity-90 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200",
-        forgiveness: "bg-gradient-forgiveness text-white hover:opacity-90 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200",
+        
       },
       size: {
         default: "h-10 px-4 py-2",

@@ -33,7 +33,7 @@ const LearnMore: React.FC = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="p-8 bg-gradient-forgiveness border-0 hover:scale-105 transition-all duration-300">
+            <Card className="p-8 bg-gradient-gold border-0 hover:scale-105 transition-all duration-300">
               <Heart className="h-16 w-16 text-white mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Forgive It</h3>
               <p className="text-white/90 text-lg leading-relaxed">
@@ -87,7 +87,7 @@ const LearnMore: React.FC = () => {
                   title: "Choose",
                   description: "Choose your action: Forgive, Trade, or Resell",
                   icon: BarChart3,
-                  gradient: "bg-gradient-forgiveness"
+                  gradient: "bg-gradient-gold"
                 },
                 {
                   step: "3",
@@ -108,7 +108,7 @@ const LearnMore: React.FC = () => {
                   title: "Repeat",
                   description: "Repeat or redeploy capital",
                   icon: RefreshCw,
-                  gradient: "bg-gradient-forgiveness"
+                  gradient: "bg-gradient-trading"
                 }
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-6 p-6 rounded-xl bg-background border border-border hover:border-gold transition-colors">
