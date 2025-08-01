@@ -9,50 +9,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Light Gold Theme - Light backgrounds with dark gold & black text */
-    --background: 42 20% 96%; /* Light cream-gold background */
-    --foreground: 30 15% 15%; /* Dark black text */
+    /* Dark Gold Theme - Darker golden backgrounds with black text */
+    --background: 42 35% 85%; /* Darker golden background */
+    --foreground: 0 0% 0%; /* Pure black text */
     
-    --card: 42 25% 98%; /* Very light gold card background */
-    --card-foreground: 30 15% 15%; /* Dark black text */
+    --card: 42 40% 88%; /* Darker gold card background */
+    --card-foreground: 0 0% 0%; /* Pure black text */
     
-    --popover: 42 25% 98%;
-    --popover-foreground: 30 15% 15%;
+    --popover: 42 40% 88%;
+    --popover-foreground: 0 0% 0%;
     
     --primary: 42 65% 25%; /* Dark gold primary */
-    --primary-foreground: 42 20% 96%;
+    --primary-foreground: 0 0% 0%; /* Pure black text on golden */
     
-    --secondary: 42 30% 92%; /* Light gold secondary */
-    --secondary-foreground: 30 15% 15;
+    --secondary: 42 45% 80%; /* Darker gold secondary */
+    --secondary-foreground: 0 0% 0; /* Pure black text */
     
-    --muted: 42 15% 88%; /* Light gold muted background */
-    --muted-foreground: 42 40% 30%; /* Dark gold muted text */
+    --muted: 42 35% 78%; /* Darker gold muted background */
+    --muted-foreground: 0 0% 0%; /* Pure black muted text */
     
     --accent: 42 65% 25%; /* Dark gold accent */
-    --accent-foreground: 42 20% 96%;
+    --accent-foreground: 0 0% 0%; /* Pure black text on golden */
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     
-    --border: 42 15% 85%; /* Light gold border */
-    --input: 42 25% 96%; /* Light gold input */
+    --border: 42 25% 75%; /* Darker gold border */
+    --input: 42 35% 82%; /* Darker gold input */
     --ring: 42 65% 25%;
     
     --radius: 0.75rem;
     
-    /* Light Gold Color Palette */
-    --bg-base: 42 20% 96%; /* Light cream-gold background */
-    --text-base: 30 15% 15%; /* Dark black text */
+    /* Dark Gold Color Palette */
+    --bg-base: 42 35% 85%; /* Darker golden background */
+    --text-base: 0 0% 0%; /* Pure black text */
     --bg-header: 42 65% 25%; /* Dark gold header */
-    --text-heading: 30 15% 15%; /* Dark black headings */
+    --text-heading: 0 0% 0%; /* Pure black headings */
     --accent-primary: 42 65% 25%; /* Dark gold primary */
     --accent-hover: 42 50% 40%; /* Medium gold hover */
     --accent-gold: 42 70% 30%; /* Dark gold accent */
-    --highlight: 42 75% 72%; /* Light gold highlight */
+    --highlight: 42 50% 60%; /* Darker gold highlight */
     --rose-coral: 15 75% 70%; /* Keep rose coral */
-    --graphite: 30 15% 15%; /* Dark text */
-    --bg-card: 42 25% 98%; /* Very light gold cards */
-    --border-soft: 42 15% 85%; /* Light gold borders */
+    --graphite: 0 0% 0%; /* Pure black text */
+    --bg-card: 42 40% 88%; /* Darker gold cards */
+    --border-soft: 42 25% 75%; /* Darker gold borders */
     
     /* Legacy DebtBow tokens - updated for gold theme */
     --primary-dark: 42 65% 25%;
