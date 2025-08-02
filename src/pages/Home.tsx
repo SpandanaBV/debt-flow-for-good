@@ -105,9 +105,9 @@ const Home: React.FC = () => {
             </Card>
             
             <Card className="p-8 text-center bg-gradient-gold border-0 hover:scale-105 hover:rotate-1 transition-all duration-500 animate-fade-in animation-delay-600 group shadow-2xl">
-              <Users className="h-12 w-12 text-primary-dark mx-auto mb-4 group-hover:animate-bounce-gentle transform group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-xl font-semibold text-primary-dark mb-3 group-hover:text-white transition-colors duration-300">Resell Assets</h3>
-              <p className="text-primary-dark/90 group-hover:text-white/90 transition-colors duration-300">
+              <Users className="h-12 w-12 text-black dark:text-primary-dark mx-auto mb-4 group-hover:animate-bounce-gentle transform group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-xl font-semibold text-black dark:text-primary-dark mb-3 group-hover:text-white transition-colors duration-300">Resell Assets</h3>
+              <p className="text-black/90 dark:text-primary-dark/90 group-hover:text-white/90 transition-colors duration-300">
                 Flip for profit while staying mission-driven
               </p>
             </Card>
