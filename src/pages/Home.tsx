@@ -142,8 +142,8 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-gradient-trading rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <span className="text-2xl font-bold text-white">2</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3 text-black dark:text-black">Choose Action</h3>
-              <p className="text-black dark:text-black text-sm">
+              <h3 className="text-lg font-semibold mb-3 text-slate-800 dark:text-foreground">Choose Action</h3>
+              <p className="text-slate-600 dark:text-muted-foreground text-sm">
                 Decide to forgive, trade, or resell
               </p>
             </div>
@@ -152,8 +152,8 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-gradient-trading rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <span className="text-2xl font-bold text-white">3</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3 text-black dark:text-black">Execute</h3>
-              <p className="text-black dark:text-black text-sm">
+              <h3 className="text-lg font-semibold mb-3 text-slate-800 dark:text-foreground">Execute</h3>
+              <p className="text-slate-600 dark:text-muted-foreground text-sm">
                 Complete transactions with full transparency
               </p>
             </div>
