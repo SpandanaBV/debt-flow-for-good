@@ -16,8 +16,8 @@ const LightModeShowcase: React.FC = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="p-6 bg-gradient-gold border-0 shadow-lg hover:shadow-xl transition-all duration-300">
-            <h3 className="text-xl font-semibold text-black mb-3">Gold Accent</h3>
-            <p className="text-black/90">
+            <h3 className="text-xl font-semibold text-black dark:text-black mb-3">Gold Accent</h3>
+            <p className="text-black/90 dark:text-black/90">
               Enhanced contrast and vibrancy for light mode
             </p>
           </Card>
@@ -30,8 +30,8 @@ const LightModeShowcase: React.FC = () => {
           </Card>
           
           <Card className="p-6 bg-gradient-gold border-0 shadow-lg hover:shadow-xl transition-all duration-300">
-            <h3 className="text-xl font-semibold text-black mb-3">Enhanced Gold</h3>
-            <p className="text-black/90">
+            <h3 className="text-xl font-semibold text-black dark:text-black mb-3">Enhanced Gold</h3>
+            <p className="text-black/90 dark:text-black/90">
               Perfect readability and visual appeal across themes
             </p>
           </Card>
