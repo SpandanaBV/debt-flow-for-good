@@ -147,7 +147,7 @@ const About: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center bg-white/50 dark:bg-card/50 backdrop-blur-sm rounded-xl p-6 hover:scale-105 transition-all duration-300 animate-fade-in animation-delay-200">
               <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg animate-pulse-slow">
-                <Heart className="h-8 w-8 text-white" />
+                <Heart className="h-8 w-8 text-black" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-slate-800 dark:text-foreground">Impact First</h3>
               <p className="text-slate-600 dark:text-muted-foreground">

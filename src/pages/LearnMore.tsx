@@ -34,9 +34,9 @@ const LearnMore: React.FC = () => {
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="p-8 bg-gradient-gold border-0 hover:scale-105 transition-all duration-300">
-              <Heart className="h-16 w-16 text-white mb-6" />
-              <h3 className="text-2xl font-bold text-white mb-4">Forgive It</h3>
-              <p className="text-white/90 text-lg leading-relaxed">
+              <Heart className="h-16 w-16 text-primary-dark mb-6" />
+              <h3 className="text-2xl font-bold text-primary-dark mb-4">Forgive It</h3>
+              <p className="text-primary-dark/90 text-lg leading-relaxed">
                 Wipe out debt. Lift a life. Earn tax relief. Transform someone's financial burden into your tax advantage while creating real social impact.
               </p>
             </Card>
@@ -113,7 +113,7 @@ const LearnMore: React.FC = () => {
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-6 p-6 rounded-xl bg-background border border-border hover:border-gold transition-colors">
                   <div className={`flex-shrink-0 w-16 h-16 rounded-full ${item.gradient} flex items-center justify-center`}>
-                    <item.icon className="h-8 w-8 text-white" />
+                    <item.icon className="h-8 w-8 text-black" />
                   </div>
                   <div className="flex-grow">
                     <div className="flex items-center gap-4 mb-2">
@@ -145,7 +145,7 @@ const LearnMore: React.FC = () => {
             Ready to Transform Healthcare Finance?
           </h2>
           <Link to="/start-impact">
-            <Button size="lg" className="bg-gradient-gold text-white hover:opacity-90 font-semibold px-12">
+            <Button size="lg" className="bg-gradient-gold text-black hover:opacity-90 font-semibold px-12">
               Start Your Impact
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

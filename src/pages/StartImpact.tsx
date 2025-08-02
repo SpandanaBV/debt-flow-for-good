@@ -208,7 +208,7 @@ const StartImpact: React.FC = () => {
                 <Button 
                   type="submit" 
                   disabled={isLoading}
-                  className="w-full bg-gradient-gold text-white hover:opacity-90 font-semibold py-6 text-lg transition-all duration-200 hover:scale-105 disabled:opacity-50 disabled:scale-100"
+                  className="w-full bg-gradient-gold text-black hover:opacity-90 font-semibold py-6 text-lg transition-all duration-200 hover:scale-105 disabled:opacity-50 disabled:scale-100"
                 >
                   {isLoading ? (
                     <div className="flex items-center gap-2">
@@ -246,13 +246,14 @@ const StartImpact: React.FC = () => {
                 </p>
               </div>
               
-              <div className="flex flex-col items-center animate-fade-in animation-delay-1000 group">
-                <Shield className="h-12 w-12 text-trading mb-4 group-hover:animate-bounce-gentle transition-all duration-300" />
-                <h3 className="text-xl font-semibold mb-2">Your Data is Safe</h3>
-                <p className="text-muted-foreground">
-                  No spam, ever. We respect your privacy completely
-                </p>
-              </div>
+             <div className="flex flex-col items-center animate-fade-in animation-delay-1000 group">
+  <Shield className="h-12 w-12 mb-4 text-[hsl(var(--gold))] group-hover:animate-bounce-gentle transition-all duration-300" />
+  <h3 className="text-xl font-semibold mb-2">Your Data is Safe</h3>
+  <p className="text-muted-foreground">
+    No spam, ever. We respect your privacy completely
+  </p>
+</div>
+
             </div>
           </div>
         </div>

@@ -47,7 +47,7 @@ const Navigation: React.FC = () => {
           <div className="flex items-center space-x-4">
             <ThemeToggle />
             <Link to="/start-impact">
-              <Button variant="default" className="bg-gradient-gold text-white hover:opacity-90 font-semibold hover:scale-105 transition-all duration-200">
+              <Button variant="default" className="bg-gradient-gold text-black hover:opacity-90 font-semibold hover:scale-105 transition-all duration-200">
                 Start Your Impact
               </Button>
             </Link>
