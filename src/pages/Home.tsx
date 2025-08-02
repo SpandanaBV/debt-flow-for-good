@@ -89,10 +89,10 @@ const Home: React.FC = () => {
           
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <Card className="p-8 text-center bg-gradient-gold border-0 hover:scale-105 hover:rotate-1 transition-all duration-500 animate-fade-in animation-delay-200 group shadow-2xl">
-              <Heart className="h-12 w-12 text-black mx-auto mb-4 group-hover:animate-bounce-gentle transform group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-xl font-semibold text-black mb-3 group-hover:text-gold transition-colors duration-300">Forgive Debt</h3>
-              <p className="text-black/90 group-hover:text-black transition-colors duration-300">
-                Wipe out debt, lift lives, and earn meaningful tax relief
+              <Heart className="h-12 w-12 text-black dark:text-black mx-auto mb-4 group-hover:animate-bounce-gentle transform group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-xl font-semibold text-black dark:text-black mb-3 group-hover:text-black transition-colors duration-300">Forgive It</h3>
+              <p className="text-black dark:text-black group-hover:text-black transition-colors duration-300">
+                Wipe out debt. Lift a life. Earn tax relief. Transform someone's financial burden into your tax advantage while creating real social impact.
               </p>
             </Card>
             
